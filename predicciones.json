@@ -1,0 +1,843 @@
+{
+  "orden_001.wav": {
+    "archivo": "orden_001.wav",
+    "transcripcion": "trae el vaso.",
+    "json": {
+      "acciones": [
+        {
+          "accion": "traer",
+          "objetos": [
+            {
+              "nombre": "vaso",
+              "adjetivos": []
+            }
+          ],
+          "personas": [],
+          "lugares": []
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 3.2402989864349365,
+    "latencia_llm": 1.1434941291809082
+  },
+  "orden_002.wav": {
+    "archivo": "orden_002.wav",
+    "transcripcion": "¡Saluda al visitante!",
+    "json": {
+      "acciones": [
+        {
+          "accion": "saludar",
+          "objetos": [],
+          "personas": [
+            {
+              "nombre": "visitante",
+              "adjetivos": []
+            }
+          ],
+          "lugares": []
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 3.1752893924713135,
+    "latencia_llm": 0.8743948936462402
+  },
+  "orden_003.wav": {
+    "archivo": "orden_003.wav",
+    "transcripcion": "Busca el libro.",
+    "json": {
+      "acciones": [
+        {
+          "accion": "buscador",
+          "objetos": [
+            {
+              "nombre": "libro",
+              "adjetivos": []
+            }
+          ],
+          "personas": [],
+          "lugares": []
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 3.081021785736084,
+    "latencia_llm": 0.9285295009613037
+  },
+  "orden_004.wav": {
+    "archivo": "orden_004.wav",
+    "transcripcion": "¡Lleva la taza!",
+    "json": {
+      "acciones": [
+        {
+          "accion": "llevar",
+          "objetos": [
+            {
+              "nombre": "taza",
+              "adjetivos": []
+            }
+          ],
+          "personas": [],
+          "lugares": []
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 3.1661016941070557,
+    "latencia_llm": 0.8773360252380371
+  },
+  "orden_005.wav": {
+    "archivo": "orden_005.wav",
+    "transcripcion": "toma el paquete.",
+    "json": {
+      "acciones": [
+        {
+          "accion": "tomar",
+          "objetos": [
+            {
+              "nombre": "paquete",
+              "adjetivos": []
+            }
+          ],
+          "personas": [],
+          "lugares": []
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 3.0005738735198975,
+    "latencia_llm": 0.9568917751312256
+  },
+  "orden_006.wav": {
+    "archivo": "orden_006.wav",
+    "transcripcion": "con el celular.",
+    "json": {
+      "acciones": [
+        {
+          "accion": "llevar",
+          "objetos": [
+            {
+              "nombre": "celular",
+              "adjetivos": []
+            }
+          ],
+          "personas": [],
+          "lugares": []
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 2.919790744781494,
+    "latencia_llm": 0.8534352779388428
+  },
+  "orden_007.wav": {
+    "archivo": "orden_007.wav",
+    "transcripcion": "Pon el libro azul sobre la mesa pqatid de plus o minus a.",
+    "json": {
+      "acciones": [
+        {
+          "accion": "poner",
+          "objetos": [
+            {
+              "nombre": "libro",
+              "adjetivos": [
+                "azul"
+              ]
+            }
+          ],
+          "personas": [],
+          "lugares": [
+            {
+              "nombre": "mesa",
+              "adjetivos": [
+                "pqatid de plus o minus a."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 3.2290191650390625,
+    "latencia_llm": 1.5007293224334717
+  },
+  "orden_008.wav": {
+    "archivo": "orden_008.wav",
+    "transcripcion": "lleva el paquete grande a la oficina principal.",
+    "json": {
+      "acciones": [
+        {
+          "accion": "llevar",
+          "objetos": [
+            {
+              "nombre": "paquete",
+              "adjetivos": [
+                "grande"
+              ]
+            }
+          ],
+          "personas": [],
+          "lugares": [
+            {
+              "nombre": "oficina principal",
+              "adjetivos": []
+            }
+          ]
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 3.243274688720703,
+    "latencia_llm": 1.022495985031128
+  },
+  "orden_009.wav": {
+    "archivo": "orden_009.wav",
+    "transcripcion": "Trae la taza roja de la cocina.",
+    "json": {
+      "acciones": [
+        {
+          "accion": "traer",
+          "objetos": [
+            {
+              "nombre": "taza",
+              "adjetivos": [
+                "roja"
+              ]
+            }
+          ],
+          "personas": [],
+          "lugares": [
+            {
+              "nombre": "cocina",
+              "adjetivos": []
+            }
+          ]
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 3.1754400730133057,
+    "latencia_llm": 1.2249493598937988
+  },
+  "orden_010.wav": {
+    "archivo": "orden_010.wav",
+    "transcripcion": "busca el celular negro en el cuarto.",
+    "json": {
+      "acciones": [
+        {
+          "accion": "buscador",
+          "objetos": [
+            {
+              "nombre": "celular",
+              "adjetivos": [
+                "negro"
+              ]
+            }
+          ],
+          "personas": [],
+          "lugares": [
+            {
+              "nombre": "cuarto",
+              "adjetivos": []
+            }
+          ]
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 3.023452043533325,
+    "latencia_llm": 1.267749547958374
+  },
+  "orden_011.wav": {
+    "archivo": "orden_011.wav",
+    "transcripcion": "Lleva la cobija, crees a la sala.",
+    "json": {
+      "acciones": [
+        {
+          "accion": "llevar",
+          "objetos": [
+            {
+              "nombre": "cobija",
+              "adjetivos": []
+            }
+          ],
+          "personas": [],
+          "lugares": [
+            {
+              "nombre": "sala",
+              "adjetivos": []
+            }
+          ]
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 3.263230323791504,
+    "latencia_llm": 1.080852746963501
+  },
+  "orden_012.wav": {
+    "archivo": "orden_012.wav",
+    "transcripcion": "con el vaso verde sobre la mesa grande.",
+    "json": {
+      "acciones": [
+        {
+          "accion": "poner",
+          "objetos": [
+            {
+              "nombre": "vaso",
+              "adjetivos": [
+                "verde"
+              ]
+            }
+          ],
+          "personas": [],
+          "lugares": [
+            {
+              "nombre": "mesa",
+              "adjetivos": [
+                "grande"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 3.141563653945923,
+    "latencia_llm": 1.0710725784301758
+  },
+  "orden_013.wav": {
+    "archivo": "orden_013.wav",
+    "transcripcion": "Ve a recuerdo, toma la cobija gris y te iré a ti de celar a abuela.",
+    "json": {
+      "acciones": [
+        {
+          "accion": "ir",
+          "objetos": [
+            {
+              "nombre": "cobija",
+              "adjetivos": [
+                "gris"
+              ]
+            }
+          ],
+          "personas": [],
+          "lugares": [
+            {
+              "nombre": "recuerdo",
+              "adjetivos": []
+            }
+          ]
+        },
+        {
+          "accion": "ir",
+          "objetos": [
+            {
+              "nombre": "celular",
+              "adjetivos": []
+            }
+          ],
+          "personas": [],
+          "lugares": [
+            {
+              "nombre": "ti",
+              "adjetivos": []
+            }
+          ]
+        },
+        {
+          "accion": "ir",
+          "objetos": [
+            {
+              "nombre": "celular",
+              "adjetivos": []
+            }
+          ],
+          "personas": [],
+          "lugares": [
+            {
+              "nombre": "abuela",
+              "adjetivos": []
+            }
+          ]
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 3.8955252170562744,
+    "latencia_llm": 2.3529186248779297
+  },
+  "orden_014.wav": {
+    "archivo": "orden_014.wav",
+    "transcripcion": "recibe al Asiatí de Plasgo Máines Oragé a ti de tres meses, a Compatí de Atí de  Plasgo Máines a la Basala de Reuniones, y a Basale a Carlos.",
+    "json": {
+      "acciones": [
+        {
+          "accion": "recibir",
+          "objetos": [
+            {
+              "nombre": "Asiatí de Plasgo Máines Oragé",
+              "adjetivos": []
+            }
+          ],
+          "personas": [
+            {
+              "nombre": "ti",
+              "adjetivos": []
+            }
+          ],
+          "lugares": [
+            {
+              "nombre": "Basala de Reuniones",
+              "adjetivos": []
+            },
+            {
+              "nombre": "Basale",
+              "adjetivos": []
+            }
+          ]
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 4.787876844406128,
+    "latencia_llm": 1.624849796295166
+  },
+  "orden_015.wav": {
+    "archivo": "orden_015.wav",
+    "transcripcion": "busca el libro azul, ella tir de símbolo de copyright, va lo a la oficina y entra tir  de símbolo de copyright, haselo amara.",
+    "json": {
+      "acciones": [
+        {
+          "accion": "buscador",
+          "objetos": [
+            {
+              "nombre": "libro",
+              "adjetivos": [
+                "azul"
+              ]
+            }
+          ],
+          "personas": [],
+          "lugares": []
+        },
+        {
+          "accion": "tirar",
+          "objetos": [
+            {
+              "nombre": "copyright",
+              "adjetivos": [
+                "símbolo"
+              ]
+            }
+          ],
+          "personas": [],
+          "lugares": []
+        },
+        {
+          "accion": "ir",
+          "objetos": [],
+          "personas": [],
+          "lugares": [
+            {
+              "nombre": "oficina",
+              "adjetivos": []
+            }
+          ]
+        },
+        {
+          "accion": "entrar",
+          "objetos": [],
+          "personas": [],
+          "lugares": []
+        },
+        {
+          "accion": "amar",
+          "objetos": [],
+          "personas": [
+            {
+              "nombre": "ella",
+              "adjetivos": []
+            }
+          ],
+          "lugares": []
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 4.493949890136719,
+    "latencia_llm": 3.3220722675323486
+  },
+  "orden_016.wav": {
+    "archivo": "orden_016.wav",
+    "transcripcion": "Ve a la cocina, toma la taza roja y te he reatil de melas.",
+    "json": {
+      "acciones": [
+        {
+          "accion": "ir",
+          "objetos": [
+            {
+              "nombre": "taza",
+              "adjetivos": [
+                "roja"
+              ]
+            }
+          ],
+          "personas": [],
+          "lugares": [
+            {
+              "nombre": "cocina",
+              "adjetivos": []
+            }
+          ]
+        },
+        {
+          "accion": "retirar",
+          "objetos": [
+            {
+              "nombre": "melaza",
+              "adjetivos": []
+            }
+          ],
+          "personas": [],
+          "lugares": []
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 4.21026611328125,
+    "latencia_llm": 1.6376252174377441
+  },
+  "orden_017.wav": {
+    "archivo": "orden_017.wav",
+    "transcripcion": "recibe al se atil de plazo minus golpe atil de símbolo de copyright red y acompatil  de atil de plazo minus algo a la sala.",
+    "json": {
+      "acciones": [
+        {
+          "accion": "recibir",
+          "objetos": [
+            {
+              "nombre": "se atil de plazo minus golpe atil de símbolo de copyright red",
+              "adjetivos": []
+            }
+          ],
+          "personas": [
+            {
+              "nombre": "atil de plazo minus",
+              "adjetivos": []
+            }
+          ],
+          "lugares": [
+            {
+              "nombre": "sala",
+              "adjetivos": []
+            }
+          ]
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 4.4827752113342285,
+    "latencia_llm": 1.5476398468017578
+  },
+  "orden_018.wav": {
+    "archivo": "orden_018.wav",
+    "transcripcion": "Toma el paquete grande y ella tíl de símbolo de copyright o a la oficina principal.",
+    "json": {
+      "acciones": [
+        {
+          "accion": "tomar",
+          "objetos": [
+            {
+              "nombre": "paquete",
+              "adjetivos": []
+            }
+          ],
+          "personas": [],
+          "lugares": [
+            {
+              "nombre": "oficina principal",
+              "adjetivos": []
+            },
+            {
+              "nombre": "oficina principal",
+              "adjetivos": []
+            }
+          ]
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 4.012576580047607,
+    "latencia_llm": 1.312434196472168
+  },
+  "orden_019.wav": {
+    "archivo": "orden_019.wav",
+    "transcripcion": "Oye por fama, alcanza el celular que deja a ti de símbolo de copyright en el cuarto.",
+    "json": {
+      "acciones": [
+        {
+          "accion": "alcanzar",
+          "objetos": [
+            {
+              "nombre": "celular",
+              "adjetivos": [
+                "de símbolo de copyright"
+              ]
+            }
+          ],
+          "personas": [],
+          "lugares": [
+            {
+              "nombre": "cuarto",
+              "adjetivos": []
+            }
+          ]
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 4.094921350479126,
+    "latencia_llm": 1.2369122505187988
+  },
+  "orden_020.wav": {
+    "archivo": "orden_020.wav",
+    "transcripcion": "Te miradile al satí de plazo minusor de la corbata roja que ya lo atienden.",
+    "json": {
+      "acciones": [
+        {
+          "accion": "decir",
+          "objetos": [],
+          "personas": [
+            {
+              "nombre": "satí de plazo minusor de la corbata roja",
+              "adjetivos": []
+            }
+          ],
+          "lugares": [
+            {
+              "nombre": "sala de reuniones",
+              "adjetivos": []
+            }
+          ]
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 3.8608012199401855,
+    "latencia_llm": 1.2327239513397217
+  },
+  "orden_021.wav": {
+    "archivo": "orden_021.wav",
+    "transcripcion": "o bien necesito que me traigas la cobija que está tilde en el cuarto.",
+    "json": {
+      "acciones": [
+        {
+          "accion": "traer",
+          "objetos": [
+            {
+              "nombre": "cobija",
+              "adjetivos": [
+                "tilde"
+              ]
+            }
+          ],
+          "personas": [],
+          "lugares": [
+            {
+              "nombre": "cuarto",
+              "adjetivos": []
+            }
+          ]
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 3.5415663719177246,
+    "latencia_llm": 1.0414338111877441
+  },
+  "orden_022.wav": {
+    "archivo": "orden_022.wav",
+    "transcripcion": "Porfa lleva esto a la oficina y dale esto a Juan.",
+    "json": {
+      "acciones": [
+        {
+          "accion": "llevar",
+          "objetos": [],
+          "personas": [],
+          "lugares": [
+            {
+              "nombre": "oficina",
+              "adjetivos": []
+            }
+          ]
+        },
+        {
+          "accion": "entregar",
+          "objetos": [],
+          "personas": [
+            {
+              "nombre": "Juan",
+              "adjetivos": []
+            }
+          ],
+          "lugares": []
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 3.5381977558135986,
+    "latencia_llm": 1.6528537273406982
+  },
+  "orden_023.wav": {
+    "archivo": "orden_023.wav",
+    "transcripcion": "Mira, te arratideme el vaso de la cocina cuando puedas.",
+    "json": {
+      "acciones": [
+        {
+          "accion": "mirar",
+          "objetos": [
+            {
+              "nombre": "vaso",
+              "adjetivos": []
+            }
+          ],
+          "personas": [],
+          "lugares": [
+            {
+              "nombre": "cocina",
+              "adjetivos": []
+            }
+          ]
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 3.5745015144348145,
+    "latencia_llm": 1.0871162414550781
+  },
+  "orden_024.wav": {
+    "archivo": "orden_024.wav",
+    "transcripcion": "Oye, hacibo un flejo, ¿me ayudas llevando este paquete a la sala?",
+    "json": {
+      "acciones": [
+        {
+          "accion": "llevar",
+          "objetos": [
+            {
+              "nombre": "paquete",
+              "adjetivos": []
+            }
+          ],
+          "personas": [],
+          "lugares": [
+            {
+              "nombre": "sala",
+              "adjetivos": []
+            }
+          ]
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 3.6880414485931396,
+    "latencia_llm": 1.1112065315246582
+  },
+  "orden_025.wav": {
+    "archivo": "orden_025.wav",
+    "transcripcion": "T-R-A-T-D-M-E-S-O",
+    "json": {
+      "acciones": [
+        {
+          "accion": "tratar",
+          "objetos": [
+            {
+              "nombre": "símbolo",
+              "adjetivos": []
+            }
+          ],
+          "personas": [],
+          "lugares": []
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 3.4606850147247314,
+    "latencia_llm": 0.8703668117523193
+  },
+  "orden_026.wav": {
+    "archivo": "orden_026.wav",
+    "transcripcion": "cuóctiles símbolos de copyright demora a la de hoy.",
+    "json": {
+      "acciones": [
+        {
+          "accion": "decir",
+          "objetos": [],
+          "personas": [
+            {
+              "nombre": "a la de hoy",
+              "adjetivos": []
+            }
+          ],
+          "lugares": []
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 3.49438214302063,
+    "latencia_llm": 1.0360054969787598
+  },
+  "orden_027.wav": {
+    "archivo": "orden_027.wav",
+    "transcripcion": "Ah, activo de esta, activo de...",
+    "json": {
+      "acciones": []
+    },
+    "error": null,
+    "latencia_s2t": 3.3678622245788574,
+    "latencia_llm": 0.7439305782318115
+  },
+  "orden_028.wav": {
+    "archivo": "orden_028.wav",
+    "transcripcion": "Ya te dije.",
+    "json": {
+      "acciones": [
+        {
+          "accion": "decir",
+          "objetos": [],
+          "personas": [
+            {
+              "nombre": "yo",
+              "adjetivos": []
+            }
+          ],
+          "lugares": []
+        }
+      ]
+    },
+    "error": null,
+    "latencia_s2t": 3.1170835494995117,
+    "latencia_llm": 0.7073321342468262
+  },
+  "orden_029.wav": {
+    "archivo": "orden_029.wav",
+    "transcripcion": "otra vez",
+    "json": {
+      "acciones": []
+    },
+    "error": null,
+    "latencia_s2t": 3.2045774459838867,
+    "latencia_llm": 0.45583200454711914
+  },
+  "orden_030.wav": {
+    "archivo": "orden_030.wav",
+    "transcripcion": "eso mismo.",
+    "json": {
+      "acciones": []
+    },
+    "error": null,
+    "latencia_s2t": 3.138011932373047,
+    "latencia_llm": 0.7419114112854004
+  }
+}

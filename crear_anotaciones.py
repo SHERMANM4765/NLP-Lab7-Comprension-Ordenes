@@ -1,0 +1,208 @@
+# -*- coding: utf-8 -*-
+"""Genera anotaciones.json con el JSON correcto para cada orden."""
+import json
+
+ANOTACIONES = {
+    # === Nivel 1: Simple ===
+    "orden_001.wav": {
+        "transcripcion": "Trae el vaso",
+        "acciones": [{"accion": "traer",
+                      "objetos": [{"nombre": "vaso", "adjetivos": []}],
+                      "personas": [], "lugares": []}]
+    },
+    "orden_002.wav": {
+        "transcripcion": "Saluda al visitante",
+        "acciones": [{"accion": "saludar", "objetos": [],
+                      "personas": [{"nombre": "visitante", "adjetivos": []}],
+                      "lugares": []}]
+    },
+    "orden_003.wav": {
+        "transcripcion": "Busca el libro",
+        "acciones": [{"accion": "buscar",
+                      "objetos": [{"nombre": "libro", "adjetivos": []}],
+                      "personas": [], "lugares": []}]
+    },
+    "orden_004.wav": {
+        "transcripcion": "Lleva la taza",
+        "acciones": [{"accion": "llevar",
+                      "objetos": [{"nombre": "taza", "adjetivos": []}],
+                      "personas": [], "lugares": []}]
+    },
+    "orden_005.wav": {
+        "transcripcion": "Toma el paquete",
+        "acciones": [{"accion": "tomar",
+                      "objetos": [{"nombre": "paquete", "adjetivos": []}],
+                      "personas": [], "lugares": []}]
+    },
+    "orden_006.wav": {
+        "transcripcion": "Pon el celular",
+        "acciones": [{"accion": "poner",
+                      "objetos": [{"nombre": "celular", "adjetivos": []}],
+                      "personas": [], "lugares": []}]
+    },
+
+    # === Nivel 2: Descriptiva ===
+    "orden_007.wav": {
+        "transcripcion": "Pon el libro azul sobre la mesa pequeña",
+        "acciones": [{"accion": "poner",
+                      "objetos": [{"nombre": "libro", "adjetivos": ["azul"]}],
+                      "personas": [],
+                      "lugares": [{"nombre": "mesa", "adjetivos": ["pequeña"]}]}]
+    },
+    "orden_008.wav": {
+        "transcripcion": "Lleva el paquete grande a la oficina principal",
+        "acciones": [{"accion": "llevar",
+                      "objetos": [{"nombre": "paquete", "adjetivos": ["grande"]}],
+                      "personas": [],
+                      "lugares": [{"nombre": "oficina principal", "adjetivos": []}]}]
+    },
+    "orden_009.wav": {
+        "transcripcion": "Trae la taza roja de la cocina",
+        "acciones": [{"accion": "traer",
+                      "objetos": [{"nombre": "taza", "adjetivos": ["roja"]}],
+                      "personas": [],
+                      "lugares": [{"nombre": "cocina", "adjetivos": []}]}]
+    },
+    "orden_010.wav": {
+        "transcripcion": "Busca el celular negro en el cuarto",
+        "acciones": [{"accion": "buscar",
+                      "objetos": [{"nombre": "celular", "adjetivos": ["negro"]}],
+                      "personas": [],
+                      "lugares": [{"nombre": "cuarto", "adjetivos": []}]}]
+    },
+    "orden_011.wav": {
+        "transcripcion": "Lleva la cobija gris a la sala",
+        "acciones": [{"accion": "llevar",
+                      "objetos": [{"nombre": "cobija", "adjetivos": ["gris"]}],
+                      "personas": [],
+                      "lugares": [{"nombre": "sala", "adjetivos": []}]}]
+    },
+    "orden_012.wav": {
+        "transcripcion": "Pon el vaso verde sobre la mesa grande",
+        "acciones": [{"accion": "poner",
+                      "objetos": [{"nombre": "vaso", "adjetivos": ["verde"]}],
+                      "personas": [],
+                      "lugares": [{"nombre": "mesa", "adjetivos": ["grande"]}]}]
+    },
+
+    # === Nivel 3: Compuesta ===
+    "orden_013.wav": {
+        "transcripcion": "Ve al cuarto, toma la cobija gris y tráesela a la abuela",
+        "acciones": [
+            {"accion": "ir", "objetos": [], "personas": [],
+             "lugares": [{"nombre": "cuarto", "adjetivos": []}]},
+            {"accion": "tomar", "objetos": [{"nombre": "cobija", "adjetivos": ["gris"]}],
+             "personas": [], "lugares": []},
+            {"accion": "traer", "objetos": [{"nombre": "cobija", "adjetivos": ["gris"]}],
+             "personas": [{"nombre": "abuela", "adjetivos": []}], "lugares": []}
+        ]
+    },
+    "orden_014.wav": {
+        "transcripcion": "Recibe a la señora Gómez, acompáñala a la sala de reuniones y avísale a Carlos",
+        "acciones": [
+            {"accion": "recibir", "objetos": [],
+             "personas": [{"nombre": "señora Gómez", "adjetivos": []}],
+             "lugares": []},
+            {"accion": "acompañar", "objetos": [],
+             "personas": [{"nombre": "señora Gómez", "adjetivos": []}],
+             "lugares": [{"nombre": "sala de reuniones", "adjetivos": []}]},
+            {"accion": "avisar", "objetos": [],
+             "personas": [{"nombre": "Carlos", "adjetivos": []}],
+             "lugares": []}
+        ]
+    },
+    "orden_015.wav": {
+        "transcripcion": "Busca el libro azul, llévalo a la oficina y entrégaselo a María",
+        "acciones": [
+            {"accion": "buscar", "objetos": [{"nombre": "libro", "adjetivos": ["azul"]}],
+             "personas": [], "lugares": []},
+            {"accion": "llevar", "objetos": [{"nombre": "libro", "adjetivos": ["azul"]}],
+             "personas": [], "lugares": [{"nombre": "oficina", "adjetivos": []}]},
+            {"accion": "entregar", "objetos": [{"nombre": "libro", "adjetivos": ["azul"]}],
+             "personas": [{"nombre": "María", "adjetivos": []}], "lugares": []}
+        ]
+    },
+    "orden_016.wav": {
+        "transcripcion": "Ve a la cocina, toma la taza roja y tráemela",
+        "acciones": [
+            {"accion": "ir", "objetos": [], "personas": [],
+             "lugares": [{"nombre": "cocina", "adjetivos": []}]},
+            {"accion": "tomar", "objetos": [{"nombre": "taza", "adjetivos": ["roja"]}],
+             "personas": [], "lugares": []},
+            {"accion": "traer", "objetos": [{"nombre": "taza", "adjetivos": ["roja"]}],
+             "personas": [], "lugares": []}
+        ]
+    },
+    "orden_017.wav": {
+        "transcripcion": "Recibe al señor Pérez y acompáñalo a la sala",
+        "acciones": [
+            {"accion": "recibir", "objetos": [],
+             "personas": [{"nombre": "señor Pérez", "adjetivos": []}], "lugares": []},
+            {"accion": "acompañar", "objetos": [],
+             "personas": [{"nombre": "señor Pérez", "adjetivos": []}],
+             "lugares": [{"nombre": "sala", "adjetivos": []}]}
+        ]
+    },
+    "orden_018.wav": {
+        "transcripcion": "Toma el paquete grande y llévalo a la oficina principal",
+        "acciones": [
+            {"accion": "tomar", "objetos": [{"nombre": "paquete", "adjetivos": ["grande"]}],
+             "personas": [], "lugares": []},
+            {"accion": "llevar", "objetos": [{"nombre": "paquete", "adjetivos": ["grande"]}],
+             "personas": [], "lugares": [{"nombre": "oficina principal", "adjetivos": []}]}
+        ]
+    },
+
+    # === Nivel 4: Coloquial ===
+    "orden_019.wav": {
+        "transcripcion": "Oye porfa me alcanzas el celular que dejé en el cuarto",
+        "acciones": [{"accion": "alcanzar",
+                      "objetos": [{"nombre": "celular", "adjetivos": []}],
+                      "personas": [],
+                      "lugares": [{"nombre": "cuarto", "adjetivos": []}]}]
+    },
+    "orden_020.wav": {
+        "transcripcion": "Eh mira dile al señor de la corbata roja que ya lo atienden",
+        "acciones": [{"accion": "decir", "objetos": [],
+                      "personas": [{"nombre": "señor", "adjetivos": ["de la corbata roja"]}],
+                      "lugares": []}]
+    },
+    "orden_021.wav": {
+        "transcripcion": "Oye necesito que me traigas la cobija que está en el cuarto",
+        "acciones": [{"accion": "traer",
+                      "objetos": [{"nombre": "cobija", "adjetivos": []}],
+                      "personas": [],
+                      "lugares": [{"nombre": "cuarto", "adjetivos": []}]}]
+    },
+    "orden_022.wav": {
+        "transcripcion": "Porfa lleva esto a la oficina y dale esto a Juan",
+        "acciones": []
+    },
+    "orden_023.wav": {
+        "transcripcion": "Mira, tráeme el vaso de la cocina cuando puedas",
+        "acciones": [{"accion": "traer",
+                      "objetos": [{"nombre": "vaso", "adjetivos": []}],
+                      "personas": [],
+                      "lugares": [{"nombre": "cocina", "adjetivos": []}]}]
+    },
+    "orden_024.wav": {
+        "transcripcion": "Oye, ¿me ayudas llevando este paquete a la sala?",
+        "acciones": [{"accion": "llevar",
+                      "objetos": [{"nombre": "paquete", "adjetivos": []}],
+                      "personas": [],
+                      "lugares": [{"nombre": "sala", "adjetivos": []}]}]
+    },
+
+    # === Nivel 5: Trampa ===
+    "orden_025.wav": {"transcripcion": "Tráeme eso", "acciones": []},
+    "orden_026.wav": {"transcripcion": "Qué demora la de hoy", "acciones": []},
+    "orden_027.wav": {"transcripcion": "Ahí está", "acciones": []},
+    "orden_028.wav": {"transcripcion": "Ya te dije", "acciones": []},
+    "orden_029.wav": {"transcripcion": "Otra vez", "acciones": []},
+    "orden_030.wav": {"transcripcion": "Eso mismo", "acciones": []},
+}
+
+with open("anotaciones.json", "w", encoding="utf-8") as f:
+    json.dump(ANOTACIONES, f, ensure_ascii=False, indent=2)
+
+print(f"✅ anotaciones.json generado con {len(ANOTACIONES)} entradas")
