@@ -1,7 +1,7 @@
 # Laboratorio 7: Comprensión de Órdenes en Español para Robots con LLMs Ligeros
 
 **Asignatura:** NLP y LLMs  
-**Integrantes:** [Tu Nombre / Sherman]  
+**Integrantes:** Santiago Lopez, Alejandra Avila y Nicolas Reyes
 **Fecha:** Octubre 2026
 
 ## 📌 1. Descripción General
